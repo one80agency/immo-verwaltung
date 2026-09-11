@@ -85,6 +85,7 @@ defined('ABSPATH') || exit;
             font-size: 16px;
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
 
         img,
@@ -221,9 +222,9 @@ defined('ABSPATH') || exit;
             height: auto;
         }
 
-        /* =========================
+        /* ========================================
            WHITE BRAND STRIP
-        ========================= */
+        ======================================== */
 
         .brand-strip {
             width: 100%;
@@ -245,9 +246,9 @@ defined('ABSPATH') || exit;
             max-width: 70vw;
         }
 
-        /* =========================
+        /* ========================================
            NAV
-        ========================= */
+        ======================================== */
 
         header.nav {
             position: sticky;
@@ -290,9 +291,9 @@ defined('ABSPATH') || exit;
             color: #fff;
         }
 
-        /* =========================
+        /* ========================================
            HERO
-        ========================= */
+        ======================================== */
 
         .hero {
             overflow: hidden;
@@ -337,6 +338,7 @@ defined('ABSPATH') || exit;
         }
 
         .hero h1 {
+            width: 100%;
             max-width: 720px;
             margin-bottom: 20px;
             color: #fff;
@@ -387,6 +389,10 @@ defined('ABSPATH') || exit;
             text-transform: uppercase;
         }
 
+        /* ========================================
+           SECTION HEAD
+        ======================================== */
+
         .section-head {
             max-width: 640px;
             margin-bottom: 52px;
@@ -408,6 +414,10 @@ defined('ABSPATH') || exit;
             font-size: 16px;
             line-height: 1.6;
         }
+
+        /* ========================================
+           CARDS
+        ======================================== */
 
         .card-grid3 {
             display: grid;
@@ -454,6 +464,10 @@ defined('ABSPATH') || exit;
             font-size: 14.5px;
             line-height: 1.55;
         }
+
+        /* ========================================
+           SERVICES
+        ======================================== */
 
         .services {
             background: var(--navy);
@@ -512,6 +526,10 @@ defined('ABSPATH') || exit;
             font-weight: 700;
             letter-spacing: .04em;
         }
+
+        /* ========================================
+           DETAILS
+        ======================================== */
 
         .detail {
             padding: 92px 0;
@@ -622,6 +640,10 @@ defined('ABSPATH') || exit;
             margin-top: 14px;
         }
 
+        /* ========================================
+           BENEFITS
+        ======================================== */
+
         .card-grid6 {
             display: grid;
             grid-template-columns: repeat(3,1fr);
@@ -661,6 +683,10 @@ defined('ABSPATH') || exit;
             font-size: 14px;
             line-height: 1.55;
         }
+
+        /* ========================================
+           PROCESS
+        ======================================== */
 
         .process-grid {
             position: relative;
@@ -713,6 +739,10 @@ defined('ABSPATH') || exit;
             line-height: 1.6;
         }
 
+        /* ========================================
+           FAQ
+        ======================================== */
+
         .faq-list {
             max-width: 820px;
         }
@@ -763,6 +793,10 @@ defined('ABSPATH') || exit;
             font-size: 14.5px;
             line-height: 1.65;
         }
+
+        /* ========================================
+           CTA
+        ======================================== */
 
         .cta {
             background: var(--navy);
@@ -883,9 +917,9 @@ defined('ABSPATH') || exit;
             margin-top: 12px;
         }
 
-        /* =========================
+        /* ========================================
            FOOTER
-        ========================= */
+        ======================================== */
 
         footer {
             background: #fff;
@@ -943,6 +977,10 @@ defined('ABSPATH') || exit;
             font-size: 12px;
         }
 
+        /* ========================================
+           REVEAL
+        ======================================== */
+
         .reveal {
             opacity: 1;
             transform: none;
@@ -961,13 +999,19 @@ defined('ABSPATH') || exit;
             transform: none;
         }
 
+        /* ========================================
+           TABLET
+        ======================================== */
+
         @media (max-width:1080px) {
+
             .card-grid6 {
                 grid-template-columns: repeat(2,1fr);
             }
         }
 
         @media (max-width:920px) {
+
             .detail-grid,
             .cta-grid {
                 grid-template-columns: 1fr;
@@ -985,6 +1029,7 @@ defined('ABSPATH') || exit;
         }
 
         @media (max-width:860px) {
+
             .nav-links {
                 display: none;
             }
@@ -1008,6 +1053,10 @@ defined('ABSPATH') || exit;
             }
         }
 
+        /* ========================================
+           MOBILE
+        ======================================== */
+
         @media (max-width:600px) {
 
             .wrap {
@@ -1019,12 +1068,24 @@ defined('ABSPATH') || exit;
                 padding: 68px 0;
             }
 
+            h1,
+            h2,
+            h3,
+            h4 {
+                max-width: 100%;
+                word-break: normal;
+                overflow-wrap: break-word;
+                hyphens: auto;
+            }
+
             h2 {
-                font-size: 28px;
+                font-size: 27px;
+                line-height: 1.25;
             }
 
             h3 {
-                font-size: 21px;
+                font-size: 20px;
+                line-height: 1.3;
             }
 
             .brand-strip-inner {
@@ -1052,13 +1113,21 @@ defined('ABSPATH') || exit;
             }
 
             .hero-inner {
+                width: 100%;
+                max-width: 100%;
                 padding: 0 20px;
             }
 
             .hero h1 {
-                font-size: 26px;
-                line-height: 1.28;
-                margin-bottom: 18px;
+                width: 100%;
+                max-width: 100%;
+                font-size: 22px;
+                line-height: 1.32;
+                letter-spacing: 0;
+                margin-bottom: 20px;
+                overflow-wrap: normal;
+                word-break: normal;
+                hyphens: manual;
             }
 
             .hero p.lead {
@@ -1171,12 +1240,14 @@ defined('ABSPATH') || exit;
         }
 
         @media (max-width:390px) {
+
             .brand-logo {
                 width: 185px;
             }
 
             .hero h1 {
-                font-size: 23px;
+                font-size: 20px;
+                line-height: 1.34;
             }
 
             .pill {
@@ -1203,7 +1274,7 @@ defined('ABSPATH') || exit;
 
         <img
             class="site-logo brand-logo"
-            src="<?php echo esc_url(get_template_directory_uri()); ?>/Logo_Immo_Verwaltung.jpg"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/logo_immo_verwaltung.jpg"
             alt="Immo Verwaltung Rheinland"
         >
 
@@ -1260,7 +1331,8 @@ defined('ABSPATH') || exit;
         <div class="hero-inner">
 
             <h1>
-                Professionelle WEG-, Miet- und Sondereigentumsverwaltung im Rheinland
+                Professionelle WEG-, Miet- und
+                Sondereigentums&shy;verwaltung im Rheinland
             </h1>
 
             <p class="lead">
@@ -2429,7 +2501,7 @@ defined('ABSPATH') || exit;
 
         <img
             class="site-logo footer-logo"
-            src="<?php echo esc_url(get_template_directory_uri()); ?>/Logo_Immo_Verwaltung.jpg"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/logo_immo_verwaltung.jpg"
             alt="Immo Verwaltung Rheinland"
         >
 
