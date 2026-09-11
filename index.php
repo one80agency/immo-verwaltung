@@ -27,10 +27,7 @@ defined('ABSPATH') || exit;
         content="Professionelle WEG-, Miet- und Sondereigentumsverwaltung in Hilden, Langenfeld, Monheim, Düsseldorf und im Rheinland."
     >
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link
         rel="preconnect"
@@ -45,18 +42,11 @@ defined('ABSPATH') || exit;
 
     <?php wp_head(); ?>
 
-
     <style>
-
-        /* =========================================================
-           VARIABLES
-        ========================================================= */
 
         :root {
             --navy: #0A1E3D;
             --navy-2: #132A4E;
-            --navy-3: #1B355E;
-
             --line-dark: #284169;
             --muted-dark: #AAB2C4;
 
@@ -64,8 +54,6 @@ defined('ABSPATH') || exit;
             --gold-light: #D9BC85;
             --gold-deep: #A67F3A;
             --gold-glow: rgba(196,154,80,.30);
-
-            --grey: #7A7F86;
 
             --paper: #F5F5F5;
             --paper-2: #FFFFFF;
@@ -80,11 +68,6 @@ defined('ABSPATH') || exit;
             --display: 'Cinzel', serif;
             --body: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
-
-
-        /* =========================================================
-           RESET
-        ========================================================= */
 
         * {
             box-sizing: border-box;
@@ -127,11 +110,6 @@ defined('ABSPATH') || exit;
             position: relative;
             scroll-margin-top: 90px;
         }
-
-
-        /* =========================================================
-           GENERAL
-        ========================================================= */
 
         .wrap {
             max-width: var(--maxw);
@@ -178,11 +156,6 @@ defined('ABSPATH') || exit;
             line-height: 1.3;
         }
 
-
-        /* =========================================================
-           EYEBROW
-        ========================================================= */
-
         .eyebrow {
             display: inline-flex;
             align-items: center;
@@ -200,11 +173,6 @@ defined('ABSPATH') || exit;
         .eyebrow.on-light {
             color: var(--gold-deep);
         }
-
-
-        /* =========================================================
-           BUTTONS
-        ========================================================= */
 
         .btn {
             display: inline-flex;
@@ -247,43 +215,39 @@ defined('ABSPATH') || exit;
             border-color: var(--muted-dark);
         }
 
-
-        /* =========================================================
-           LOGO
-        ========================================================= */
-
         .site-logo {
             display: block;
             width: 100%;
             height: auto;
         }
 
-        .logo-panel {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+        /* =========================
+           WHITE BRAND STRIP
+        ========================= */
+
+        .brand-strip {
+            width: 100%;
             background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 12px 36px rgba(0,0,0,.10);
+            border-bottom: 1px solid #ececec;
         }
 
-        .hero-logo-panel {
-            width: 390px;
-            max-width: 86vw;
-            padding: 18px 24px 15px;
-            margin-bottom: 34px;
+        .brand-strip-inner {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 24px 32px 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .footer-logo-panel {
-            width: 220px;
-            padding: 10px 14px;
+        .brand-logo {
+            width: 250px;
+            max-width: 70vw;
         }
 
-
-        /* =========================================================
-           HEADER
-        ========================================================= */
+        /* =========================
+           NAV
+        ========================= */
 
         header.nav {
             position: sticky;
@@ -298,7 +262,7 @@ defined('ABSPATH') || exit;
         .nav-inner {
             max-width: var(--maxw);
             margin: 0 auto;
-            padding: 17px 32px;
+            padding: 15px 32px;
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -326,14 +290,13 @@ defined('ABSPATH') || exit;
             color: #fff;
         }
 
-
-        /* =========================================================
+        /* =========================
            HERO
-        ========================================================= */
+        ========================= */
 
         .hero {
             overflow: hidden;
-            padding: 80px 0 0;
+            padding: 82px 0 0;
             text-align: center;
             color: #fff;
             background:
@@ -424,11 +387,6 @@ defined('ABSPATH') || exit;
             text-transform: uppercase;
         }
 
-
-        /* =========================================================
-           SECTION HEAD
-        ========================================================= */
-
         .section-head {
             max-width: 640px;
             margin-bottom: 52px;
@@ -450,11 +408,6 @@ defined('ABSPATH') || exit;
             font-size: 16px;
             line-height: 1.6;
         }
-
-
-        /* =========================================================
-           PROBLEM CARDS
-        ========================================================= */
 
         .card-grid3 {
             display: grid;
@@ -501,11 +454,6 @@ defined('ABSPATH') || exit;
             font-size: 14.5px;
             line-height: 1.55;
         }
-
-
-        /* =========================================================
-           SERVICES
-        ========================================================= */
 
         .services {
             background: var(--navy);
@@ -564,11 +512,6 @@ defined('ABSPATH') || exit;
             font-weight: 700;
             letter-spacing: .04em;
         }
-
-
-        /* =========================================================
-           DETAIL SECTIONS
-        ========================================================= */
 
         .detail {
             padding: 92px 0;
@@ -679,11 +622,6 @@ defined('ABSPATH') || exit;
             margin-top: 14px;
         }
 
-
-        /* =========================================================
-           BENEFITS
-        ========================================================= */
-
         .card-grid6 {
             display: grid;
             grid-template-columns: repeat(3,1fr);
@@ -723,11 +661,6 @@ defined('ABSPATH') || exit;
             font-size: 14px;
             line-height: 1.55;
         }
-
-
-        /* =========================================================
-           PROCESS
-        ========================================================= */
 
         .process-grid {
             position: relative;
@@ -780,11 +713,6 @@ defined('ABSPATH') || exit;
             line-height: 1.6;
         }
 
-
-        /* =========================================================
-           FAQ
-        ========================================================= */
-
         .faq-list {
             max-width: 820px;
         }
@@ -835,11 +763,6 @@ defined('ABSPATH') || exit;
             font-size: 14.5px;
             line-height: 1.65;
         }
-
-
-        /* =========================================================
-           CTA / CONTACT
-        ========================================================= */
 
         .cta {
             background: var(--navy);
@@ -960,24 +883,42 @@ defined('ABSPATH') || exit;
             margin-top: 12px;
         }
 
-
-        /* =========================================================
+        /* =========================
            FOOTER
-        ========================================================= */
+        ========================= */
 
         footer {
-            padding: 46px 0;
+            background: #fff;
+            color: var(--muted);
+            border-top: 1px solid var(--paper-line);
+        }
+
+        .footer-brand {
+            width: 100%;
+            padding: 30px 0 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-logo {
+            width: 220px;
+            max-width: 70vw;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--paper-line);
             background: var(--navy);
             color: var(--muted-dark);
-            border-top: 1px solid var(--line-dark);
         }
 
         .foot-inner {
+            min-height: 78px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 28px;
+            gap: 22px;
         }
 
         .foot-links {
@@ -1002,11 +943,6 @@ defined('ABSPATH') || exit;
             font-size: 12px;
         }
 
-
-        /* =========================================================
-           REVEAL
-        ========================================================= */
-
         .reveal {
             opacity: 1;
             transform: none;
@@ -1025,21 +961,13 @@ defined('ABSPATH') || exit;
             transform: none;
         }
 
-
-        /* =========================================================
-           TABLET
-        ========================================================= */
-
         @media (max-width:1080px) {
-
             .card-grid6 {
                 grid-template-columns: repeat(2,1fr);
             }
         }
 
-
         @media (max-width:920px) {
-
             .detail-grid,
             .cta-grid {
                 grid-template-columns: 1fr;
@@ -1056,9 +984,7 @@ defined('ABSPATH') || exit;
             }
         }
 
-
         @media (max-width:860px) {
-
             .nav-links {
                 display: none;
             }
@@ -1082,11 +1008,6 @@ defined('ABSPATH') || exit;
             }
         }
 
-
-        /* =========================================================
-           MOBILE
-        ========================================================= */
-
         @media (max-width:600px) {
 
             .wrap {
@@ -1106,12 +1027,17 @@ defined('ABSPATH') || exit;
                 font-size: 21px;
             }
 
+            .brand-strip-inner {
+                padding: 18px 20px 17px;
+            }
 
-            /* HEADER */
+            .brand-logo {
+                width: 205px;
+                max-width: 72vw;
+            }
 
             .nav-inner {
                 padding: 10px 16px;
-                justify-content: center;
             }
 
             .nav-cta.btn {
@@ -1121,22 +1047,12 @@ defined('ABSPATH') || exit;
                 font-size: 12px;
             }
 
-
-            /* HERO */
-
             .hero {
-                padding-top: 46px;
+                padding-top: 52px;
             }
 
             .hero-inner {
                 padding: 0 20px;
-            }
-
-            .hero-logo-panel {
-                width: 285px;
-                max-width: 82vw;
-                padding: 13px 16px 11px;
-                margin-bottom: 28px;
             }
 
             .hero h1 {
@@ -1173,9 +1089,6 @@ defined('ABSPATH') || exit;
                 line-height: 1.4;
             }
 
-
-            /* SECTIONS */
-
             .section-head {
                 margin-bottom: 36px;
             }
@@ -1206,9 +1119,6 @@ defined('ABSPATH') || exit;
                 padding: 25px 22px;
             }
 
-
-            /* FAQ */
-
             .faq-q {
                 padding: 20px 0;
                 font-size: 15.5px;
@@ -1219,9 +1129,6 @@ defined('ABSPATH') || exit;
                 padding-left: 0;
                 padding-right: 0;
             }
-
-
-            /* CTA */
 
             .cta-grid {
                 gap: 36px;
@@ -1236,22 +1143,21 @@ defined('ABSPATH') || exit;
                 word-break: break-word;
             }
 
+            .footer-brand {
+                padding: 24px 0 20px;
+            }
 
-            /* FOOTER */
-
-            footer {
-                padding: 38px 0;
+            .footer-logo {
+                width: 185px;
             }
 
             .foot-inner {
+                min-height: 0;
+                padding-top: 26px;
+                padding-bottom: 26px;
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-            }
-
-            .footer-logo-panel {
-                width: 190px;
-                padding: 9px 12px;
             }
 
             .foot-links {
@@ -1264,15 +1170,9 @@ defined('ABSPATH') || exit;
             }
         }
 
-
-        /* =========================================================
-           SMALL MOBILE
-        ========================================================= */
-
         @media (max-width:390px) {
-
-            .hero-logo-panel {
-                width: 245px;
+            .brand-logo {
+                width: 185px;
             }
 
             .hero h1 {
@@ -1295,9 +1195,24 @@ defined('ABSPATH') || exit;
 <?php wp_body_open(); ?>
 
 
-<!-- =========================================================
-     HEADER
-========================================================= -->
+<!-- WHITE BRAND STRIP -->
+
+<div class="brand-strip">
+
+    <div class="brand-strip-inner">
+
+        <img
+            class="site-logo brand-logo"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/Logo_Immo_Verwaltung.jpg"
+            alt="Immo Verwaltung Rheinland"
+        >
+
+    </div>
+
+</div>
+
+
+<!-- NAV -->
 
 <header class="nav">
 
@@ -1323,7 +1238,6 @@ defined('ABSPATH') || exit;
 
         </nav>
 
-
         <a
             class="btn btn-gold nav-cta"
             href="#kontakt"
@@ -1339,39 +1253,21 @@ defined('ABSPATH') || exit;
 <main id="top">
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
+    <!-- HERO -->
 
     <section class="hero">
 
         <div class="hero-inner">
 
-
-            <div class="logo-panel hero-logo-panel">
-
-                <img
-                    class="site-logo"
-                    src="<?php echo esc_url(get_template_directory_uri()); ?>/Logo_Immo_Verwaltung.jpg"
-                    alt="Immo Verwaltung Rheinland – Werte erhalten. Werte entwickeln."
-                >
-
-            </div>
-
-
             <h1>
                 Professionelle WEG-, Miet- und Sondereigentumsverwaltung im Rheinland
             </h1>
 
-
             <p class="lead">
-
                 Wir übernehmen die kaufmännische, technische und rechtliche Verwaltung
                 Ihrer Immobilie – zuverlässig, transparent und
                 <strong>mit persönlichen Ansprechpartnern vor Ort.</strong>
-
             </p>
-
 
             <div class="hero-ctas">
 
@@ -1382,7 +1278,6 @@ defined('ABSPATH') || exit;
                     Kostenlose Erstberatung
                 </a>
 
-
                 <a
                     href="#leistungen"
                     class="btn btn-ghost-dark"
@@ -1391,7 +1286,6 @@ defined('ABSPATH') || exit;
                 </a>
 
             </div>
-
 
             <div class="pill-row">
 
@@ -1418,17 +1312,11 @@ defined('ABSPATH') || exit;
     </section>
 
 
-    <!-- =====================================================
-         AUSGANGSLAGE
-    ====================================================== -->
+    <!-- AUSGANGSLAGE -->
 
-    <section
-        class="section"
-        id="ausgangslage"
-    >
+    <section class="section" id="ausgangslage">
 
         <div class="wrap">
-
 
             <div class="section-head reveal">
 
@@ -1451,7 +1339,6 @@ defined('ABSPATH') || exit;
 
             <div class="card-grid3">
 
-
                 <div class="pcard reveal">
 
                     <div class="icn">
@@ -1466,11 +1353,9 @@ defined('ABSPATH') || exit;
 
                     </div>
 
-
                     <h4>
                         Rechtliche Anforderungen
                     </h4>
-
 
                     <p>
                         WEG- und Mietrecht ändern sich – Fristen, Beschlüsse und
@@ -1492,11 +1377,9 @@ defined('ABSPATH') || exit;
 
                     </div>
 
-
                     <h4>
                         Instandhaltungsstau
                     </h4>
-
 
                     <p>
                         Ohne vorausschauende Planung häufen sich Reparaturen –
@@ -1518,11 +1401,9 @@ defined('ABSPATH') || exit;
 
                     </div>
 
-
                     <h4>
                         Kommunikationsaufwand
                     </h4>
-
 
                     <p>
                         Eigentümerversammlungen, Mieteranfragen und Dienstleister –
@@ -1531,7 +1412,6 @@ defined('ABSPATH') || exit;
 
                 </div>
 
-
             </div>
 
         </div>
@@ -1539,17 +1419,11 @@ defined('ABSPATH') || exit;
     </section>
 
 
-    <!-- =====================================================
-         SERVICES
-    ====================================================== -->
+    <!-- LEISTUNGEN -->
 
-    <section
-        class="section services"
-        id="leistungen"
-    >
+    <section class="section services" id="leistungen">
 
         <div class="wrap">
-
 
             <div class="section-head reveal">
 
@@ -1557,11 +1431,9 @@ defined('ABSPATH') || exit;
                     Unsere Leistungen
                 </span>
 
-
                 <h2>
                     Drei Verwaltungsbereiche, ein Ansprechpartner
                 </h2>
-
 
                 <p class="sub">
                     Ob Eigentümergemeinschaft, vermietete Einheit oder einzelne
@@ -1574,7 +1446,6 @@ defined('ABSPATH') || exit;
 
             <div class="svc-grid">
 
-
                 <div class="svc-item reveal">
 
                     <svg class="icon icn" viewBox="0 0 24 24">
@@ -1585,17 +1456,14 @@ defined('ABSPATH') || exit;
 
                     </svg>
 
-
                     <h4>
                         WEG-Verwaltung
                     </h4>
-
 
                     <p>
                         Kaufmännische, technische und rechtliche Verwaltung Ihrer
                         Wohnungseigentümergemeinschaft.
                     </p>
-
 
                     <a class="jump" href="#weg">
                         Details →
@@ -1614,17 +1482,14 @@ defined('ABSPATH') || exit;
 
                     </svg>
 
-
                     <h4>
                         Mietverwaltung
                     </h4>
-
 
                     <p>
                         Laufende Verwaltung vermieteter Wohn- und Gewerbeeinheiten –
                         von Mietvertrag bis Nebenkostenabrechnung.
                     </p>
-
 
                     <a class="jump" href="#miet">
                         Details →
@@ -1643,24 +1508,20 @@ defined('ABSPATH') || exit;
 
                     </svg>
 
-
                     <h4>
                         Sondereigentumsverwaltung
                     </h4>
-
 
                     <p>
                         Individuelle Verwaltung einzelner Eigentumswohnungen
                         im Auftrag der Eigentümerin oder des Eigentümers.
                     </p>
 
-
                     <a class="jump" href="#sonder">
                         Details →
                     </a>
 
                 </div>
-
 
             </div>
 
@@ -1669,36 +1530,25 @@ defined('ABSPATH') || exit;
     </section>
 
 
-    <!-- =====================================================
-         WEG
-    ====================================================== -->
+    <!-- WEG -->
 
-    <section
-        class="detail"
-        id="weg"
-    >
+    <section class="detail" id="weg">
 
         <div class="wrap">
 
             <div class="detail-grid">
 
-
                 <div class="reveal">
 
-
                     <div class="kicker-row">
-
                         <span class="kicker">
                             WEG-Verwaltung
                         </span>
-
                     </div>
-
 
                     <h3>
                         Professionelle Verwaltung Ihrer Eigentümergemeinschaft
                     </h3>
-
 
                     <p class="dek">
                         Wir übernehmen die kaufmännische, technische und rechtliche
@@ -1706,9 +1556,7 @@ defined('ABSPATH') || exit;
                         transparent und den gesetzlichen Anforderungen entsprechend.
                     </p>
 
-
                     <ul class="leistungen">
-
 
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
@@ -1717,14 +1565,12 @@ defined('ABSPATH') || exit;
                             Vorbereitung und Durchführung von Eigentümerversammlungen
                         </li>
 
-
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M20 6 9 17l-5-5" />
                             </svg>
                             Umsetzung gefasster Beschlüsse
                         </li>
-
 
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
@@ -1733,14 +1579,12 @@ defined('ABSPATH') || exit;
                             Erstellung von Wirtschaftsplänen und Jahresabrechnungen
                         </li>
 
-
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M20 6 9 17l-5-5" />
                             </svg>
                             Verwaltung der Instandhaltungsrücklage
                         </li>
-
 
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
@@ -1749,16 +1593,13 @@ defined('ABSPATH') || exit;
                             Laufende Kommunikation mit Eigentümern und Dienstleistern
                         </li>
 
-
                     </ul>
-
 
                     <p class="footnote">
                         Nicht enthalten: bauliche Sonderprojekte und rechtliche
                         Vertretung vor Gericht; hierfür vermitteln wir bei Bedarf an
                         spezialisierte Partner.
                     </p>
-
 
                 </div>
 
@@ -1767,11 +1608,9 @@ defined('ABSPATH') || exit;
 
                     <div class="info-card">
 
-
                         <span class="lbl">
                             Gut zu wissen
                         </span>
-
 
                         <p>
                             Seit der WEG-Reform 2020 gelten für
@@ -1779,18 +1618,15 @@ defined('ABSPATH') || exit;
                             etwa bei Beschlussfassung und Rücklagenbildung.
                         </p>
 
-
                         <p>
                             Wir sorgen dafür, dass Ihre Gemeinschaft diese Anforderungen
                             zuverlässig erfüllt und behalten gesetzliche Änderungen
                             für Sie im Blick.
                         </p>
 
-
                     </div>
 
                 </div>
-
 
             </div>
 
@@ -1799,29 +1635,21 @@ defined('ABSPATH') || exit;
     </section>
 
 
-    <!-- =====================================================
-         MIETVERWALTUNG
-    ====================================================== -->
+    <!-- MIETVERWALTUNG -->
 
-    <section
-        class="detail reverse"
-        id="miet"
-    >
+    <section class="detail reverse" id="miet">
 
         <div class="wrap">
 
             <div class="detail-grid">
 
-
                 <div class="reveal">
 
                     <div class="info-card">
 
-
                         <span class="lbl">
                             Gut zu wissen
                         </span>
-
 
                         <p>
                             Eine korrekte, fristgerechte Nebenkostenabrechnung ist
@@ -1829,13 +1657,11 @@ defined('ABSPATH') || exit;
                             zwischen Eigentümer und Mieter.
                         </p>
 
-
                         <p>
                             Wir übernehmen die Erstellung und stehen sowohl Ihnen als
                             auch Ihren Mieterinnen und Mietern als Ansprechpartner zur
                             Verfügung.
                         </p>
-
 
                     </div>
 
@@ -1844,20 +1670,15 @@ defined('ABSPATH') || exit;
 
                 <div class="reveal">
 
-
                     <div class="kicker-row">
-
                         <span class="kicker">
                             Mietverwaltung
                         </span>
-
                     </div>
-
 
                     <h3>
                         Verlässliche Verwaltung vermieteter Immobilien
                     </h3>
-
 
                     <p class="dek">
                         Wir übernehmen die laufende kaufmännische und technische
@@ -1865,9 +1686,7 @@ defined('ABSPATH') || exit;
                         von der Mietvertragsverwaltung bis zur Nebenkostenabrechnung.
                     </p>
 
-
                     <ul class="leistungen">
-
 
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
@@ -1876,14 +1695,12 @@ defined('ABSPATH') || exit;
                             Verwaltung und Pflege der Mietverträge
                         </li>
 
-
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M20 6 9 17l-5-5" />
                             </svg>
                             Erstellung der jährlichen Nebenkostenabrechnung
                         </li>
-
 
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
@@ -1892,14 +1709,12 @@ defined('ABSPATH') || exit;
                             Kommunikation mit Mieterinnen und Mietern
                         </li>
 
-
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M20 6 9 17l-5-5" />
                             </svg>
                             Koordination von Instandhaltungs- und Reparaturmaßnahmen
                         </li>
-
 
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
@@ -1908,18 +1723,14 @@ defined('ABSPATH') || exit;
                             Unterstützung bei Mietanpassungen im gesetzlichen Rahmen
                         </li>
 
-
                     </ul>
-
 
                     <p class="footnote">
                         Nicht enthalten: Maklertätigkeiten bei Neuvermietung; hierfür
                         arbeiten wir bei Bedarf mit lokalen Partnern zusammen.
                     </p>
 
-
                 </div>
-
 
             </div>
 
@@ -1928,36 +1739,25 @@ defined('ABSPATH') || exit;
     </section>
 
 
-    <!-- =====================================================
-         SONDEREIGENTUM
-    ====================================================== -->
+    <!-- SONDEREIGENTUM -->
 
-    <section
-        class="detail"
-        id="sonder"
-    >
+    <section class="detail" id="sonder">
 
         <div class="wrap">
 
             <div class="detail-grid">
 
-
                 <div class="reveal">
 
-
                     <div class="kicker-row">
-
                         <span class="kicker">
                             Sondereigentumsverwaltung
                         </span>
-
                     </div>
-
 
                     <h3>
                         Verwaltung einzelner Eigentumswohnungen
                     </h3>
-
 
                     <p class="dek">
                         Für Eigentümerinnen und Eigentümer einzelner Wohnungen
@@ -1965,9 +1765,7 @@ defined('ABSPATH') || exit;
                         unabhängig von der WEG-Verwaltung der Gesamtanlage.
                     </p>
 
-
                     <ul class="leistungen">
-
 
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
@@ -1976,14 +1774,12 @@ defined('ABSPATH') || exit;
                             Prüfung von Abrechnungen und Beschlüssen der Eigentümergemeinschaft
                         </li>
 
-
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M20 6 9 17l-5-5" />
                             </svg>
                             Kommunikation mit der WEG-Verwaltung
                         </li>
-
 
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
@@ -1992,7 +1788,6 @@ defined('ABSPATH') || exit;
                             Verwaltung bei Vermietung der Einheit
                         </li>
 
-
                         <li>
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M20 6 9 17l-5-5" />
@@ -2000,15 +1795,12 @@ defined('ABSPATH') || exit;
                             Ansprechpartner bei Fragen rund um Ihr Sondereigentum
                         </li>
 
-
                     </ul>
-
 
                     <p class="footnote">
                         Besonders geeignet für Eigentümerinnen und Eigentümer,
                         die nicht selbst am Wohnort der Immobilie leben.
                     </p>
-
 
                 </div>
 
@@ -2017,11 +1809,9 @@ defined('ABSPATH') || exit;
 
                     <div class="info-card">
 
-
                         <span class="lbl">
                             Gut zu wissen
                         </span>
-
 
                         <p>
                             Auch wenn für die Gesamtanlage bereits eine WEG-Verwaltung
@@ -2029,17 +1819,14 @@ defined('ABSPATH') || exit;
                             durch uns betreuen lassen.
                         </p>
 
-
                         <p>
                             So haben Sie einen persönlichen Ansprechpartner, der
                             ausschließlich Ihre Interessen als Eigentümer im Blick hat.
                         </p>
 
-
                     </div>
 
                 </div>
-
 
             </div>
 
@@ -2048,24 +1835,17 @@ defined('ABSPATH') || exit;
     </section>
 
 
-    <!-- =====================================================
-         VORTEILE
-    ====================================================== -->
+    <!-- VORTEILE -->
 
-    <section
-        class="section"
-        id="vorteile"
-    >
+    <section class="section" id="vorteile">
 
         <div class="wrap">
-
 
             <div class="section-head reveal">
 
                 <span class="eyebrow on-light">
                     Warum wir
                 </span>
-
 
                 <h2>
                     Werte erhalten. Werte entwickeln.
@@ -2075,7 +1855,6 @@ defined('ABSPATH') || exit;
 
 
             <div class="card-grid6 reveal">
-
 
                 <div class="bcell">
 
@@ -2091,11 +1870,9 @@ defined('ABSPATH') || exit;
 
                     </div>
 
-
                     <h4>
                         Lokale Präsenz im Rheinland
                     </h4>
-
 
                     <p>
                         Wir kennen den Immobilienmarkt und die Besonderheiten
@@ -2119,11 +1896,9 @@ defined('ABSPATH') || exit;
 
                     </div>
 
-
                     <h4>
                         Transparente Kommunikation
                     </h4>
-
 
                     <p>
                         Klare Abrechnungen und verständliche Informationen
@@ -2147,11 +1922,9 @@ defined('ABSPATH') || exit;
 
                     </div>
 
-
                     <h4>
                         Digitale Prozesse
                     </h4>
-
 
                     <p>
                         Dokumente und Abrechnungen digital verfügbar –
@@ -2173,11 +1946,9 @@ defined('ABSPATH') || exit;
 
                     </div>
 
-
                     <h4>
                         Rechtssichere Verwaltung
                     </h4>
-
 
                     <p>
                         Verwaltung nach aktuellem WEG- und Mietrecht –
@@ -2201,11 +1972,9 @@ defined('ABSPATH') || exit;
 
                     </div>
 
-
                     <h4>
                         Fester Ansprechpartner
                     </h4>
-
 
                     <p>
                         Ein Ansprechpartner kennt Ihre Immobilie,
@@ -2227,11 +1996,9 @@ defined('ABSPATH') || exit;
 
                     </div>
 
-
                     <h4>
                         Nachhaltiger Werterhalt
                     </h4>
-
 
                     <p>
                         Vorausschauende Instandhaltungsplanung
@@ -2240,7 +2007,6 @@ defined('ABSPATH') || exit;
 
                 </div>
 
-
             </div>
 
         </div>
@@ -2248,24 +2014,17 @@ defined('ABSPATH') || exit;
     </section>
 
 
-    <!-- =====================================================
-         ABLAUF
-    ====================================================== -->
+    <!-- ABLAUF -->
 
-    <section
-        class="section process"
-        id="ablauf"
-    >
+    <section class="section process" id="ablauf">
 
         <div class="wrap">
-
 
             <div class="section-head center reveal">
 
                 <span class="eyebrow on-light">
                     Ablauf
                 </span>
-
 
                 <h2>
                     So beginnt die Zusammenarbeit
@@ -2276,18 +2035,15 @@ defined('ABSPATH') || exit;
 
             <div class="process-grid reveal">
 
-
                 <div class="process-item">
 
                     <div class="n">
                         1
                     </div>
 
-
                     <h4>
                         Kontaktaufnahme &amp; Bestandsaufnahme
                     </h4>
-
 
                     <p>
                         Wir lernen Ihre Immobilie und Ihre Anforderungen kennen.
@@ -2302,11 +2058,9 @@ defined('ABSPATH') || exit;
                         2
                     </div>
 
-
                     <h4>
                         Individuelles Angebot
                     </h4>
-
 
                     <p>
                         Sie erhalten ein auf Ihre Immobilie zugeschnittenes,
@@ -2322,11 +2076,9 @@ defined('ABSPATH') || exit;
                         3
                     </div>
 
-
                     <h4>
                         Übergabe &amp; Start der Verwaltung
                     </h4>
-
 
                     <p>
                         Geordnete Übernahme aller Unterlagen
@@ -2335,7 +2087,6 @@ defined('ABSPATH') || exit;
 
                 </div>
 
-
             </div>
 
         </div>
@@ -2343,9 +2094,7 @@ defined('ABSPATH') || exit;
     </section>
 
 
-    <!-- =====================================================
-         FAQ
-    ====================================================== -->
+    <!-- FAQ -->
 
     <section
         class="section"
@@ -2355,13 +2104,11 @@ defined('ABSPATH') || exit;
 
         <div class="wrap">
 
-
             <div class="section-head reveal">
 
                 <span class="eyebrow on-light">
                     Häufige Fragen
                 </span>
-
 
                 <h2>
                     Was Eigentümerinnen und Eigentümer uns oft fragen
@@ -2372,37 +2119,27 @@ defined('ABSPATH') || exit;
 
             <div class="faq-list reveal">
 
-
                 <div class="faq-item open">
 
-                    <button
-                        class="faq-q"
-                        type="button"
-                    >
+                    <button class="faq-q" type="button">
 
                         <span>
                             Was kostet eine WEG- oder Mietverwaltung?
                         </span>
 
-
                         <svg class="icon" viewBox="0 0 24 24">
-
                             <path d="M12 5v14M5 12h14" />
-
                         </svg>
 
                     </button>
 
-
                     <div class="faq-a">
 
                         <div class="faq-a-inner">
-
                             Die Kosten richten sich nach Größe, Zustand und Umfang
                             der zu verwaltenden Immobilie. Nach einer ersten
                             Bestandsaufnahme erstellen wir Ihnen ein individuelles,
                             transparentes Angebot.
-
                         </div>
 
                     </div>
@@ -2412,34 +2149,25 @@ defined('ABSPATH') || exit;
 
                 <div class="faq-item">
 
-                    <button
-                        class="faq-q"
-                        type="button"
-                    >
+                    <button class="faq-q" type="button">
 
                         <span>
                             Wie läuft ein Verwalterwechsel ab?
                         </span>
 
-
                         <svg class="icon" viewBox="0 0 24 24">
-
                             <path d="M12 5v14M5 12h14" />
-
                         </svg>
 
                     </button>
 
-
                     <div class="faq-a">
 
                         <div class="faq-a-inner">
-
                             Wir übernehmen die Kommunikation mit der bisherigen
                             Verwaltung, sichten die vorhandenen Unterlagen und sorgen
                             für einen geordneten Übergang – möglichst ohne
                             Unterbrechung für Eigentümer und Mieter.
-
                         </div>
 
                     </div>
@@ -2449,34 +2177,25 @@ defined('ABSPATH') || exit;
 
                 <div class="faq-item">
 
-                    <button
-                        class="faq-q"
-                        type="button"
-                    >
+                    <button class="faq-q" type="button">
 
                         <span>
                             Übernehmen Sie auch einzelne Eigentumswohnungen
                             (Sondereigentum)?
                         </span>
 
-
                         <svg class="icon" viewBox="0 0 24 24">
-
                             <path d="M12 5v14M5 12h14" />
-
                         </svg>
 
                     </button>
 
-
                     <div class="faq-a">
 
                         <div class="faq-a-inner">
-
                             Ja. Auch wenn für die Gesamtanlage bereits eine
                             WEG-Verwaltung besteht, können wir Ihre einzelne Einheit
                             zusätzlich für Sie betreuen.
-
                         </div>
 
                     </div>
@@ -2486,39 +2205,29 @@ defined('ABSPATH') || exit;
 
                 <div class="faq-item">
 
-                    <button
-                        class="faq-q"
-                        type="button"
-                    >
+                    <button class="faq-q" type="button">
 
                         <span>
                             In welchen Regionen sind Sie tätig?
                         </span>
 
-
                         <svg class="icon" viewBox="0 0 24 24">
-
                             <path d="M12 5v14M5 12h14" />
-
                         </svg>
 
                     </button>
 
-
                     <div class="faq-a">
 
                         <div class="faq-a-inner">
-
                             Unser Schwerpunkt liegt auf dem Rheinland, mit Hilden,
                             Langenfeld, Monheim und Düsseldorf. Sprechen Sie uns gerne
                             auf Ihre konkrete Immobilie an.
-
                         </div>
 
                     </div>
 
                 </div>
-
 
             </div>
 
@@ -2527,23 +2236,15 @@ defined('ABSPATH') || exit;
     </section>
 
 
-    <!-- =====================================================
-         KONTAKT
-    ====================================================== -->
+    <!-- CONTACT -->
 
-    <section
-        class="section cta"
-        id="kontakt"
-    >
+    <section class="section cta" id="kontakt">
 
         <div class="wrap">
 
-
             <div class="cta-grid">
 
-
                 <div class="reveal">
-
 
                     <span
                         class="eyebrow on-dark"
@@ -2552,11 +2253,9 @@ defined('ABSPATH') || exit;
                         Nächste Schritte
                     </span>
 
-
                     <h2>
                         Lernen wir Ihre Immobilie kennen.
                     </h2>
-
 
                     <p class="lead">
                         Ob Eigentümergemeinschaft, vermietete Einheit oder einzelne
@@ -2564,9 +2263,7 @@ defined('ABSPATH') || exit;
                         Erstgespräch.
                     </p>
 
-
                     <div class="steps">
-
 
                         <div class="step">
 
@@ -2606,39 +2303,30 @@ defined('ABSPATH') || exit;
 
                         </div>
 
-
                     </div>
-
 
                 </div>
 
 
                 <div class="reveal">
 
-
                     <div class="contact-card">
-
 
                         <div class="lbl">
                             Ansprechpartner
                         </div>
 
-
                         <div class="name">
                             Gabriel Czajor
                         </div>
-
 
                         <div class="role">
                             Geschäftsführer
                         </div>
 
-
                         <hr>
 
-
                         <div class="contact-line">
-
 
                             <svg class="icon" viewBox="0 0 24 24">
 
@@ -2648,12 +2336,10 @@ defined('ABSPATH') || exit;
 
                             </svg>
 
-
                             <span>
                                 Klotzstraße 19<br>
                                 40721 Hilden
                             </span>
-
 
                         </div>
 
@@ -2663,18 +2349,15 @@ defined('ABSPATH') || exit;
                             class="contact-line"
                         >
 
-
                             <svg class="icon" viewBox="0 0 24 24">
 
                                 <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2z" />
 
                             </svg>
 
-
                             <span>
                                 02103-4937240
                             </span>
-
 
                         </a>
 
@@ -2684,18 +2367,15 @@ defined('ABSPATH') || exit;
                             class="contact-line"
                         >
 
-
                             <svg class="icon" viewBox="0 0 24 24">
 
                                 <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2z" />
 
                             </svg>
 
-
                             <span>
                                 0162-7487916
                             </span>
-
 
                         </a>
 
@@ -2705,7 +2385,6 @@ defined('ABSPATH') || exit;
                             class="contact-line"
                         >
 
-
                             <svg class="icon" viewBox="0 0 24 24">
 
                                 <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -2714,11 +2393,9 @@ defined('ABSPATH') || exit;
 
                             </svg>
 
-
                             <span>
                                 kontakt@immo-verwaltung.de
                             </span>
-
 
                         </a>
 
@@ -2730,12 +2407,9 @@ defined('ABSPATH') || exit;
                             Beratung anfragen
                         </a>
 
-
                     </div>
 
-
                 </div>
-
 
             </div>
 
@@ -2747,76 +2421,59 @@ defined('ABSPATH') || exit;
 </main>
 
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
+<!-- FOOTER -->
 
 <footer>
 
+    <div class="footer-brand">
 
-    <div class="wrap foot-inner">
-
-
-        <a
-            href="#top"
-            class="logo-panel footer-logo-panel"
-            aria-label="Immo Verwaltung Rheinland"
+        <img
+            class="site-logo footer-logo"
+            src="<?php echo esc_url(get_template_directory_uri()); ?>/Logo_Immo_Verwaltung.jpg"
+            alt="Immo Verwaltung Rheinland"
         >
-
-            <img
-                class="site-logo"
-                src="<?php echo esc_url(get_template_directory_uri()); ?>/Logo_Immo_Verwaltung.jpg"
-                alt="Immo Verwaltung Rheinland"
-            >
-
-        </a>
-
-
-        <div class="foot-links">
-
-
-            <a href="#leistungen">
-                Leistungen
-            </a>
-
-
-            <a href="#vorteile">
-                Vorteile
-            </a>
-
-
-            <a href="#ablauf">
-                Ablauf
-            </a>
-
-
-            <a href="#faq">
-                FAQ
-            </a>
-
-
-        </div>
-
-
-        <div class="foot-legal">
-
-            © <?php echo esc_html(date('Y')); ?>
-            Immo Verwaltung Rheinland
-            · Impressum
-            · Datenschutz
-
-        </div>
-
 
     </div>
 
 
+    <div class="footer-bottom">
+
+        <div class="wrap foot-inner">
+
+            <div class="foot-links">
+
+                <a href="#leistungen">
+                    Leistungen
+                </a>
+
+                <a href="#vorteile">
+                    Vorteile
+                </a>
+
+                <a href="#ablauf">
+                    Ablauf
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+            </div>
+
+
+            <div class="foot-legal">
+                © <?php echo esc_html(date('Y')); ?>
+                Immo Verwaltung Rheinland
+                · Impressum
+                · Datenschutz
+            </div>
+
+        </div>
+
+    </div>
+
 </footer>
 
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
 
 <script>
 
