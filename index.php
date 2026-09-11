@@ -1915,7 +1915,7 @@ defined('ABSPATH') || exit;
 
             <img
                 class="site-logo"
-                src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/logo-immo-verwaltung.jpg"
+                src="<?php echo esc_url(get_template_directory_uri()); ?>/Logo_Immo_Verwaltung.jpg"
                 alt="Immo Verwaltung Rheinland"
             >
 
