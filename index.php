@@ -222,9 +222,7 @@ defined('ABSPATH') || exit;
             height: auto;
         }
 
-        /* ========================================
-           WHITE BRAND STRIP
-        ======================================== */
+        /* WHITE BRAND STRIP */
 
         .brand-strip {
             width: 100%;
@@ -246,9 +244,7 @@ defined('ABSPATH') || exit;
             max-width: 70vw;
         }
 
-        /* ========================================
-           NAV
-        ======================================== */
+        /* NAV */
 
         header.nav {
             position: sticky;
@@ -291,9 +287,7 @@ defined('ABSPATH') || exit;
             color: #fff;
         }
 
-        /* ========================================
-           HERO
-        ======================================== */
+        /* HERO */
 
         .hero {
             overflow: hidden;
@@ -389,9 +383,7 @@ defined('ABSPATH') || exit;
             text-transform: uppercase;
         }
 
-        /* ========================================
-           SECTION HEAD
-        ======================================== */
+        /* SECTION HEAD */
 
         .section-head {
             max-width: 640px;
@@ -415,9 +407,7 @@ defined('ABSPATH') || exit;
             line-height: 1.6;
         }
 
-        /* ========================================
-           CARDS
-        ======================================== */
+        /* CARDS */
 
         .card-grid3 {
             display: grid;
@@ -465,9 +455,7 @@ defined('ABSPATH') || exit;
             line-height: 1.55;
         }
 
-        /* ========================================
-           SERVICES
-        ======================================== */
+        /* SERVICES */
 
         .services {
             background: var(--navy);
@@ -527,9 +515,7 @@ defined('ABSPATH') || exit;
             letter-spacing: .04em;
         }
 
-        /* ========================================
-           DETAILS
-        ======================================== */
+        /* DETAILS */
 
         .detail {
             padding: 92px 0;
@@ -640,9 +626,7 @@ defined('ABSPATH') || exit;
             margin-top: 14px;
         }
 
-        /* ========================================
-           BENEFITS
-        ======================================== */
+        /* BENEFITS */
 
         .card-grid6 {
             display: grid;
@@ -684,9 +668,7 @@ defined('ABSPATH') || exit;
             line-height: 1.55;
         }
 
-        /* ========================================
-           PROCESS
-        ======================================== */
+        /* PROCESS */
 
         .process-grid {
             position: relative;
@@ -739,9 +721,7 @@ defined('ABSPATH') || exit;
             line-height: 1.6;
         }
 
-        /* ========================================
-           FAQ
-        ======================================== */
+        /* FAQ */
 
         .faq-list {
             max-width: 820px;
@@ -794,9 +774,7 @@ defined('ABSPATH') || exit;
             line-height: 1.65;
         }
 
-        /* ========================================
-           CTA
-        ======================================== */
+        /* CTA */
 
         .cta {
             background: var(--navy);
@@ -917,9 +895,7 @@ defined('ABSPATH') || exit;
             margin-top: 12px;
         }
 
-        /* ========================================
-           FOOTER
-        ======================================== */
+        /* FOOTER */
 
         footer {
             background: #fff;
@@ -958,15 +934,12 @@ defined('ABSPATH') || exit;
         .foot-links {
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
+            gap: 22px;
         }
 
         .foot-links a {
-            margin-right: 22px;
             font-size: 13px;
-        }
-
-        .foot-links a:last-child {
-            margin-right: 0;
         }
 
         .foot-links a:hover {
@@ -974,12 +947,18 @@ defined('ABSPATH') || exit;
         }
 
         .foot-legal {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
             font-size: 12px;
         }
 
-        /* ========================================
-           REVEAL
-        ======================================== */
+        .foot-legal a:hover {
+            color: #fff;
+        }
+
+        /* REVEAL */
 
         .reveal {
             opacity: 1;
@@ -999,9 +978,7 @@ defined('ABSPATH') || exit;
             transform: none;
         }
 
-        /* ========================================
-           TABLET
-        ======================================== */
+        /* TABLET */
 
         @media (max-width:1080px) {
 
@@ -1053,9 +1030,7 @@ defined('ABSPATH') || exit;
             }
         }
 
-        /* ========================================
-           MOBILE
-        ======================================== */
+        /* MOBILE */
 
         @media (max-width:600px) {
 
@@ -1234,8 +1209,9 @@ defined('ABSPATH') || exit;
                 gap: 13px 18px;
             }
 
-            .foot-links a {
-                margin-right: 0;
+            .foot-legal {
+                justify-content: center;
+                gap: 6px;
             }
         }
 
@@ -2534,10 +2510,24 @@ defined('ABSPATH') || exit;
 
 
             <div class="foot-legal">
-                © <?php echo esc_html(date('Y')); ?>
-                Immo Verwaltung Rheinland
-                · Impressum
-                · Datenschutz
+
+                <span>
+                    © <?php echo esc_html(date('Y')); ?>
+                    Immo Verwaltung Rheinland
+                </span>
+
+                <span>·</span>
+
+                <a href="<?php echo esc_url(home_url('/impressum/')); ?>">
+                    Impressum
+                </a>
+
+                <span>·</span>
+
+                <a href="<?php echo esc_url(home_url('/datenschutz/')); ?>">
+                    Datenschutz
+                </a>
+
             </div>
 
         </div>
